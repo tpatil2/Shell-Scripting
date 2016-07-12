@@ -1,0 +1,51 @@
+#!/bin/bash
+
+#comment
+
+
+echo "Simple Airthamatics"
+
+declare -r num1=9
+
+num2=5
+
+sum=$((num1+num2))
+sub=$((num1+num2))
+div=$((num1+num2))
+mul=$((num1+num2))
+
+echo "9 + 5 = $sum"
+echo "9 - 5 = $sub"
+echo "9 / 5 = $div"
+echo "9 * 5 = $mul"
+
+echo "Simple operations"
+
+cho "square of 9 is = $((9**2))
+echo "Modulus of 9 by 6 is = $((9%6))""
+
+rand=7
+let rand+=2
+
+echo "increament concept"
+
+echo "rand++ is $((rand++))"
+echo "++rand is $((++rand))"
+echo "rand-- is $((rand--))"
+echo "--rand is $((--rand))"
+
+echo "Use python command"
+
+a=6.7
+b=2.9
+
+addition=$(python -c "print $a+$b ")
+echo "addition is $addition"
+
+cat<<END
+hello this is 
+basic mathematics
+I used in shell 
+script
+END
+
