@@ -1,0 +1,44 @@
+#!/bin/bash
+
+getDate(){
+
+date
+
+return
+}
+
+getDate
+
+globalname="I am Global"
+
+
+testscope(){
+
+local globalname="I am local"
+echo "inside testscope $globalname"
+return
+
+}
+
+echo "Local name is"
+testscope
+
+echo "global name is $globalname"
+
+echo "Funciton values passed"
+
+getSum(){
+	num1=$1
+	num2=$2
+	
+	sum=$((num1+num2))
+
+	echo $sum
+}
+
+	num3=77
+	num4=12
+
+	sum=$(getSum num3 num4)
+
+	echo "addition is $sum"
