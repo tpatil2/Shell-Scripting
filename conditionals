@@ -1,0 +1,44 @@
+#!/bin/bash
+
+read -p "How old are you ? " age
+
+echo "simple conditonals"
+
+if [ $age -ge 16 ]
+then
+	echo "you can drive"
+elif [ $age -eq 15 ]
+then
+	echo "you can drive after one year"
+else 
+	echo "you can not drive"
+fi
+
+
+read -p "Enter your Number : " num
+
+
+if ((((num%2))==0)); then
+	echo "NUmber is even"
+else
+	echo "number is odd"
+fi
+
+
+if ((num > 12)); then
+	echo "number is greatrer than 12"
+fi
+
+echo "Simple logical operators"
+
+ 
+if ((((((num%3))==0)) && ((((num%6))==0)))); then
+	echo "number is divisable by both 3 and 6"
+else
+	echo "not dibisible by both 3 & 6"
+fi
+
+touch sample_file && vim sampl_file
+
+[ -d sample_dir ] || mkdir sample_dir
+
