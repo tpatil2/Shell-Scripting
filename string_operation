@@ -1,0 +1,31 @@
+#!/bin/bash
+
+
+#string 1 is NULL
+str1=""
+str2="good"
+str3="bad"
+
+
+if [ "$str1" ]; then
+	echo "$str1 is not NULL"
+else 
+	echo "$str1 is NULL"
+fi
+
+
+if [ "$str2" == "$str3" ]; then
+	echo "$str2 is equale to $str3"
+elif [ "$str2" > "$str3" ]; then
+	echo "$str2 is greater than $str3"
+elif [ "$str2" < "$str3" ]; then
+	echo "$str2 is less than $str3"
+fi
+
+
+if [ -z "$str1"]; then
+	echo "str1 = "str1" has no value"
+fi
+
+
+
