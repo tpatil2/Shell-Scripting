@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+sample_str="My name is Tejas Patil"
+
+echo "string staring between  7th and 17th index: ${sample_str:7:17}"
+echo "string staring after s letter is : ${sample_str#*s}"
+echo "length of string is: ${#sample_str}"
+echo "string staring after 7th index: ${sample_str:7}"
