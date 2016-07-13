@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#--------case---------
+
+
+read -p "Please enter your age :" age
+
+case $age in
+
+[0-4])
+	echo "Please got to kinder garden ur age is $age"
+	;;	
+5)
+	echo "you can got to first grade"
+	;;
+[0-9]|1[0-8])
+	echo "you are in $((age-5)) grade"
+	;;
+2[4-9])
+	echo "you not under age to drive"
+	;;
+*)
+	echo "none of these"
+	;;	
+esac
