@@ -1,0 +1,31 @@
+#!/bin/bash
+
+
+
+read -p "validate length: " len
+
+
+pat="^[0-9]{5}$"
+
+if [[ $len =~ $pat ]]; then
+	echo "length is five"
+else 
+	echo "length is not valid"
+fi
+
+read -p "Enter two numbers: " num1 num2
+
+
+sum=$((num1+num2))
+
+echo "$num1 + $num2 = $sum"
+
+
+read -sp "Enter password: " word
+
+
+if [[ "$word" == "password" ]]; then
+	echo "password is correct"
+else 
+	echo "Incorrect password"
+fi
