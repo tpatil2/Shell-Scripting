@@ -23,3 +23,12 @@ case $age in
 	echo "none of these"
 	;;	
 esac
+
+
+#-------------------------
+
+can_vote=0
+age=18
+((age >= 18?(can_vote=1):(can_vote=0)))
+
+echo "you can vote := $can_vote"
