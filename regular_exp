@@ -29,3 +29,18 @@ if [[ "$word" == "password" ]]; then
 else 
 	echo "Incorrect password"
 fi
+
+
+OIFS="$IFS"
+IFS=","
+
+read -p "enter two values seperated by comma: "  num1 num2
+
+num1=${num1//[[:blank:]]/0}
+num2=${num2//[[:blank:]]/}
+
+sum=$((num1+num2))
+
+echo "addition of num1 + num2 = $sum"
+
+IFS="$OIFS"
