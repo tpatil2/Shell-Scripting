@@ -1,6 +1,6 @@
 #!/bin/bash
 
-My_nums=(3.14 4.55 33 55 66 66)
+My_nums=(3.14 44.55 33 5 6 2)
 
 	echo "pi: ${My_nums[0]}"
 
@@ -8,8 +8,25 @@ My_nums[4]=77
 	
 	echo "num at index 4 is: ${My_nums[4]}"
 
-My_nums+=(88 99 100)
+My_nums+=(100 99 88)
 
 for i in ${My_nums[*]}; do
+	echo $i
+done
+
+
+for i in ${My_nums[@]}; do
+	echo $i
+done
+
+echo "Length of Array is: ${#My_nums[*]}"
+
+echo "Lenght if arry at index: ${#My_nums[4]}"
+
+sorted_num=($( for i in "${My_nums[@]}"; do
+	echo $i
+done | sort))
+ 
+for i in ${sorted_num[*]}; do
 	echo $i
 done
