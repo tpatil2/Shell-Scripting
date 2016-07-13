@@ -1,6 +1,18 @@
 #!/bin/bash
 
 
+#---------for loop---
+
+
+for (( i=0; i<=19; i=i+1 )); do
+	
+	echo $i
+done
+
+for i in {A..Z}; do
+	echo $i
+done
+
 
 
 num=1
