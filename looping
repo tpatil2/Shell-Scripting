@@ -1,5 +1,17 @@
 #!/bin/bash
 
+
+
+
+num=1
+
+until [ $num -ge 20 ]; do
+	echo "num is : $num"
+	num=$((num+2))
+done
+
+
+#--------------------------------
 num=1
 
 while [ $num -le 100 ]; do
