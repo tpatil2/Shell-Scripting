@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while read Name Age Matches Fifty Centuries; do
+	
+	printf "Name:${Name}\nAge:${Age}\nMatches:${Matches}\nHalf Centuries:${Fifty}\nCenturies:${Centuries}"
+
+done < player_data.txt 
