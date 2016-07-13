@@ -1,7 +1,17 @@
 #!/bin/bash
 
+#-------------------------------------------
+
+name="Tejas"
+
+echo "This is ${name}'s home"
+
+string="I am a programmer"
+
+echo "${string//programmer/developer}"
 
 
+#---------------------------------------------
 read -p "validate length: " len
 
 
@@ -13,6 +23,8 @@ else
 	echo "length is not valid"
 fi
 
+
+#--------------------------------------------
 read -p "Enter two numbers: " num1 num2
 
 
@@ -29,7 +41,7 @@ if [[ "$word" == "password" ]]; then
 else 
 	echo "Incorrect password"
 fi
-
+#--------------------------------------------
 
 OIFS="$IFS"
 IFS=","
@@ -43,4 +55,4 @@ sum=$((num1+num2))
 
 echo "addition of num1 + num2 = $sum"
 
-IFS="$OIFS"
+IFS="$OIFS"#--------------------------------------------
