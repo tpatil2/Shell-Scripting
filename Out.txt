@@ -1,0 +1,6 @@
+This is first argument: ./arg_parsing.sh
+This is Second argument: One
+This is Third argument: Two
+This is Fourth argument: Three
+These are All argument: One Two Three
+Total num of arguments: 3
