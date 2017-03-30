@@ -1,0 +1,6 @@
+Hello, root 
+Date is, Wed Mar 29 18:23:23 PDT 2017 
+Directory is, /home/summer/Programs/Shell-Scripting/System Info 
+Current date and time Wed Mar 29 18:23:23 PDT 2017
+Current date in dd/mm/yyyy format 29/03/2017
+Starting backup at 29/03/2017, please wait...
